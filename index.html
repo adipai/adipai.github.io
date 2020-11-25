@@ -28,38 +28,98 @@
     <body id="page-top">
     <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <style>
 
+        * {
+          box-sizing: border-box;
+        }
+       
+        body {
+          margin: 0;
+          overflow-x: hidden !important;
+        }
+        .container {
+           /* max-width: 100% !important; */
+           overflow-x: hidden !important;
+       }
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+       
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+       
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+       
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+       
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+       
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+    </style>
     <!-- Navigation Components -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
-        <div style="margin:0 auto;">
-            <!-- <a class="navbar-brand brand js-scroll-trigger" href="#page-top">Aditya Pai</a>
+        <!-- <a class="navbar-brand brand js-scroll-trigger" href="#page-top">Aditya Pai</a> -->
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button> -->
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="container">
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Bio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">Work</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div> 
+                <div style="margin:0 auto;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#projects">Work</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
     </nav>
     <!-- Header -->
     <header class="header-hero">
@@ -67,7 +127,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h1 class="brand-heading ">Hello there! I'm Aditya</h1>
+                        <h1 class="brand-heading">Hello there! I'm Aditya</h1>
+                        <p class="intro-text">autodidact ∙ foodie ∙ traveler ∙ engineer </p>
                         <img src="img/dp.JPG" style="border-radius: 50%; " alt="Aditya Pai" height="240" width="240">
                         <!-- <br><br><br> -->
                         <p class="intro-text" >
@@ -167,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -259,97 +320,38 @@
         </div>
 
  <!-- Photo Grid -->
- <div class="row" >
-   <div class="column">
-     <img src="img/gallery/mnnit.jpg" style="width:100%">
-     <img src="img/gallery/coi1.jpg" style="width:100%">
-     <img src="img/gallery/coi3.jpg" style="width:100%">
-     <img src="img/gallery/rit7.jpg" style="width:100%">
-       </div>
+    <div class="row" >
+    <div class="column">
+        <img src="img/gallery/mnnit.jpg" style="width:100%">
+        <img src="img/gallery/coi1.jpg" style="width:100%">
+        <img src="img/gallery/coi3.jpg" style="width:100%">
+        <img src="img/gallery/rit7.jpg" style="width:100%">
+        </div>
 
-   <div class="column">
-     <img src="img/gallery/nmit1.jpg" style="width:100%">
-     <img src="img/gallery/nmit2.jpeg" style="width:100%">
-     <img src="img/gallery/rit10.jpg" style="width:100%">
-     <img src="img/gallery/rit13.JPG" style="width:100%">
-     <img src="img/gallery/rit6.jpg" style="width:100%">
-   </div>
+    <div class="column">
+        <img src="img/gallery/nmit1.jpg" style="width:100%">
+        <img src="img/gallery/nmit2.jpeg" style="width:100%">
+        <img src="img/gallery/rit10.jpg" style="width:100%">
+        <img src="img/gallery/rit13.JPG" style="width:100%">
+        <img src="img/gallery/rit6.jpg" style="width:100%">
+    </div>
 
-   <div class="column">
-     <img src="img/gallery/rit3.JPG" style="width:100%">
-     <img src="img/gallery/coi4.jpg" style="width:100%">
-     <img src="img/gallery/coi2.jpg" style="width:100%">
-   </div>
+    <div class="column">
+        <img src="img/gallery/rit3.JPG" style="width:100%">
+        <img src="img/gallery/coi4.jpg" style="width:100%">
+        <img src="img/gallery/coi2.jpg" style="width:100%">
+    </div>
 
-   <div class="column">
-     <img src="img/gallery/rit5.JPG" style="width:100%">
-     <img src="img/gallery/nafl.jpg" style="width:100%">
-     <img src="img/gallery/rit11.jpg" style="width:100%">
-     <img src="img/gallery/rit12.JPG" style="width:100%">
-   </div>
- </div>
+    <div class="column">
+        <img src="img/gallery/rit5.JPG" style="width:100%">
+        <img src="img/gallery/nafl.jpg" style="width:100%">
+        <img src="img/gallery/rit11.jpg" style="width:100%">
+        <img src="img/gallery/rit12.JPG" style="width:100%">
+    </div>  
+    </div>
 
 </section>
-<style>
 
-    * {
-      box-sizing: border-box;
-    }
-   
-    body {
-      margin: 0;
-      overflow-x: hidden !important;
-   
-    }
-    .container {
-       /* max-width: 100% !important; */
-       overflow-x: hidden !important;
-   }
-    .header {
-      text-align: center;
-      padding: 32px;
-    }
-   
-    .row {
-      display: -ms-flexbox; /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE10 */
-      flex-wrap: wrap;
-      padding: 0 4px;
-    }
-   
-    /* Create four equal columns that sits next to each other */
-    .column {
-      -ms-flex: 25%; /* IE10 */
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
-    }
-   
-    .column img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-    }
-   
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-      .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-      }
-    }
-   
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-      }
-    }
-    </style>
     <!-- Contact/Social Section -->
     <section id="contact" class="contact-section text-center">
         <h2>Contact Me</h2>
