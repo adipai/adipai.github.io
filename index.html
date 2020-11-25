@@ -30,16 +30,16 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
     <!-- Navigation Components -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand brand js-scroll-trigger" href="#page-top">Aditya Pai</a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
+        <div style="margin:0 auto;">
+            <!-- <a class="navbar-brand brand js-scroll-trigger" href="#page-top">Aditya Pai</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
-            </button>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">Bio</a>
                     </li>
@@ -57,24 +57,43 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
-
                 </ul>
             </div>
-        </div>
+        </div> 
     </nav>
-
     <!-- Header -->
     <header class="header-hero">
         <div class="header-body">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h1 class="brand-heading">Hello there! I'm Aditya</h1>
-
-                        <p class="intro-text" ><span id="typed6" style="white-space:pre"></span></p>
-                        <a href="#about" class="btn btn-circle js-scroll-trigger">
+                        <h1 class="brand-heading ">Hello there! I'm Aditya</h1>
+                        <img src="img/dp.JPG" style="border-radius: 50%; " alt="Aditya Pai" height="240" width="240">
+                        <!-- <br><br><br> -->
+                        <p class="intro-text" >
+                            <!-- <ul> -->
+                                <li class="list-inline-item m-2">
+                                    <a style="color: white;" role="button" href="https://in.linkedin.com/in/adityapai16" target="_blank">
+                                        <i class='fab fa-linkedin-in' style='font-size:28px'>   </i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item m-2">
+                                    <a style="color: white;" role="button" href="https://github.com/adipai" target="_blank">
+                                        <i class='fab fa-github' style='font-size:28px'>   </i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item m-2">
+                                    <a style="color: white;" role="button" href="https://twitter.com/adipiiee" target="_blank">
+                                        <i class='fab fa-twitter' style='font-size:28px'>   </i>
+                                    </a>
+                                </li>
+            
+                              
+                           <!-- </ul> -->
+                        </p>
+                        <!-- <a href="#about" class="btn btn-circle js-scroll-trigger">
                             <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -87,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About Me</h2>
-                    <img src="img/DSC_0052.JPG" class="img-thumbnail" alt="Aditya Pai" height="650" width="300">
+                    <!-- <img src="img/DSC_0052.JPG" class="img-thumbnail" alt="Aditya Pai" height="650" width="300"> -->
                     <p align="justify">
                     I'm a data engineer @ <a href="https://www.brillio.com/" target="_blank">Brillio</a> based in Bengaluru, India. I
                     have always had a predilection towards technology and innovation. I aspire to use cutting edge
@@ -111,7 +130,6 @@
             <div class="row">
                 <div class="mx-auto">
                     <h2>Skills</h2>
-
                     <div class="card-columns mx-2">
                         <div class="card animated fadeInUpShort shadow bg-dark">
                             <div class="card-header" background-color="#232221">Software Development</div>
@@ -141,18 +159,15 @@
                         </div>
                         <div class="card animated fadeInUpShort shadow bg-dark">
                             <div class="card-header">Internet of Things</div>
-                            <font color="#8BADCF">Platforms:</font> Arduino, NodeMCU(ESP8266), Raspberry Pi.<br>
-                            <font color="#8BADCF">Frameworks and web services:</font> Adafruit IO, IFTTT.
                             <div class="card-body">
-
                                 <p class="card-text">
-
+                                    <font color="#8BADCF">Platforms:</font> Arduino, NodeMCU(ESP8266), Raspberry Pi.<br>
+                                    <font color="#8BADCF">Frameworks and web services:</font> Adafruit IO, IFTTT.
                                 </p>
                             </div>
                         </div>
-
                     </div>
-                </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -232,66 +247,16 @@
 
 
     <!--Workshop Gallery-->
-    <section id="gallery" class="text-center">
-      <h2>Gallery</h2>
-      <p>I've trained over 700 students and faculty across India through hands-on sessions and FDPs. Some of the institutions where I've
-        conducted workshops are<br> TAT-Bhubaneshwar, IIT-BHU, IIIT-MK, AVV-Coimbatore, MSRIT-blore and NMIT-Blore. Here's a glimpse...</p>
-      <style>
- * {
-   box-sizing: border-box;
- }
-
- body {
-   margin: 0;
-
- }
-
- .header {
-   text-align: center;
-   padding: 32px;
- }
-
- .row {
-   display: -ms-flexbox; /* IE10 */
-   display: flex;
-   -ms-flex-wrap: wrap; /* IE10 */
-   flex-wrap: wrap;
-   padding: 0 4px;
- }
-
- /* Create four equal columns that sits next to each other */
- .column {
-   -ms-flex: 25%; /* IE10 */
-   flex: 25%;
-   max-width: 25%;
-   padding: 0 4px;
- }
-
- .column img {
-   margin-top: 8px;
-   vertical-align: middle;
-   width: 100%;
- }
-
- /* Responsive layout - makes a two column-layout instead of four columns */
- @media screen and (max-width: 800px) {
-   .column {
-     -ms-flex: 50%;
-     flex: 50%;
-     max-width: 50%;
-   }
- }
-
- /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
- @media screen and (max-width: 600px) {
-   .column {
-     -ms-flex: 100%;
-     flex: 100%;
-     max-width: 100%;
-   }
- }
- </style>
- <body>
+    <section id="gallery" class="project-section animatedParent text-center">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto">
+                    <h2>Gallery</h2>
+                    <p >I've trained over 700 students and faculty across India through hands-on sessions and FDPs. Some of the institutions where I've
+                        conducted workshops are TAT-Bhubaneshwar, IIT-BHU, IIIT-MK, AVV-Coimbatore, MSRIT-blore and NMIT-Blore. Here's a glimpse...</p>
+                </div>
+            </div>
+        </div>
 
  <!-- Photo Grid -->
  <div class="row" >
@@ -325,37 +290,99 @@
  </div>
 
 </section>
+<style>
 
+    * {
+      box-sizing: border-box;
+    }
+   
+    body {
+      margin: 0;
+      overflow-x: hidden !important;
+   
+    }
+    .container {
+       /* max-width: 100% !important; */
+       overflow-x: hidden !important;
+   }
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+   
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+   
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+   
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+   
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+   
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
     <!-- Contact/Social Section -->
     <section id="contact" class="contact-section text-center">
+        <h2>Contact Me</h2>
        <div class="container animatedParent">
            <div class="row">
-               <div>
-                   <h2>Contact Me</h2>
-                   <p>
+                <div class="col-lg-10 mx-auto">
+                   <p class="animated fadeIn">
                      Thank you for visiting, I appreciate your time!<br>
                      If you're building a community, need collaborations or workshops/training, drop a mail at
-                       <a id="eml">[Javascript Not Working?]</a> or find me on:
-                   <ul>
+                    <a id="eml">[Javascript Not Working?]</a> or find me on:
+                   </p>
 
-                     <li class="list-inline-item animated fadeIn">
-                     <a role="button" href="https://in.linkedin.com/in/adityapai16" target="_blank">
-                     <i class='fab fa-linkedin-in' style='font-size:24px'>   </i></i></a>
-                     </li>
+                    <!-- <ul> -->
+                        <li class="list-inline-item animated fadeIn m-2">
+                            <a role="button" href="https://in.linkedin.com/in/adityapai16" target="_blank">
+                                <i class='fab fa-linkedin-in' style='font-size:28px'>   </i>
+                            </a>
+                        </li>
+    
+                        <li class="list-inline-item animated fadeIn m-2">
+                            <a role="button" href="https://github.com/adipai" target="_blank">
+                                <i class='fab fa-github' style='font-size:28px'>   </i>
+                            </a>
+                        </li>
 
-                       <li class="list-inline-item animated fadeIn">
-                       <a role="button" href="https://twitter.com/adipiiee" target="_blank">
-                       <i class='fab fa-twitter' style='font-size:24px'>   </i></a>
-                       </li>
-
-                       <li class="list-inline-item animated fadeIn">
-                       <a role="button" href="https://github.com/adipai" target="_blank">
-                       <i class='fab fa-github' style='font-size:24px'>   </i></a>
-                       </li>
-
-
-
-                   </ul>
+                        <li class="list-inline-item animated fadeIn m-2">
+                            <a role="button" href="https://twitter.com/adipiiee" target="_blank">
+                                <i class='fab fa-twitter' style='font-size:28px'>   </i>
+                            </a>
+                        </li>
+    
+                    
+                   <!-- </ul> -->
                </div>
            </div>
        </div>
